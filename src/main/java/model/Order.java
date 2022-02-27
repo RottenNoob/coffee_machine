@@ -1,17 +1,19 @@
 package model;
 
 public class Order {
-    private String drinkType;
+    private DrinkType drinkType;
 
     private Integer sugarQuantity;
 
     private String message;
 
-    public String getDrinkType() {
+    private double insertedMoney;
+
+    public DrinkType getDrinkType() {
         return drinkType;
     }
 
-    public void setDrinkType(String drinkType) {
+    public void setDrinkType(DrinkType drinkType) {
         this.drinkType = drinkType;
     }
 
@@ -29,5 +31,13 @@ public class Order {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public double getInsertedMoney() {
+        return insertedMoney;
+    }
+
+    public void setInsertedMoney(double insertedMoney) {
+        this.insertedMoney = insertedMoney;
     }
 }
