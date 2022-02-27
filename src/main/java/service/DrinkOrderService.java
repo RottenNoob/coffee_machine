@@ -16,6 +16,9 @@ public class DrinkOrderService {
             return "M:Your order requires " + additionalCashRequired + " additional Euros.";
         }
         String instruction = drinkTypeAttributesService.getDrinkTypeInstruction(order.getDrinkType());
+        if (order.isExtraHot()) {
+            instruction += "h";
+        }
         instruction += ":";
         if (order.getSugarQuantity() != null && order.getSugarQuantity() > 0) {
             instruction += String.valueOf(order.getSugarQuantity());

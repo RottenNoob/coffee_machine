@@ -9,6 +9,8 @@ public class Order {
 
     private double insertedMoney;
 
+    private boolean isExtraHot = false;
+
     public DrinkType getDrinkType() {
         return drinkType;
     }
@@ -39,5 +41,13 @@ public class Order {
 
     public void setInsertedMoney(double insertedMoney) {
         this.insertedMoney = insertedMoney;
+    }
+
+    public boolean isExtraHot() {
+        return isExtraHot;
+    }
+
+    public void setExtraHot(boolean extraHot) {
+        isExtraHot = extraHot;
     }
 }

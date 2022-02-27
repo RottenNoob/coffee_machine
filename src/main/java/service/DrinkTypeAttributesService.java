@@ -10,6 +10,8 @@ public class DrinkTypeAttributesService {
             return "H";
         } else if (DrinkType.COFFEE.equals(drinkType)) {
             return "C";
+        } else if (DrinkType.ORANGE.equals(drinkType)) {
+            return "O";
         }
         return null;
     }
@@ -20,6 +22,8 @@ public class DrinkTypeAttributesService {
         } else if (DrinkType.CHOCOLATE.equals(drinkType)) {
             return 0.5;
         } else if (DrinkType.COFFEE.equals(drinkType)) {
+            return 0.6;
+        } else if (DrinkType.ORANGE.equals(drinkType)) {
             return 0.6;
         }
         return 0.0;
